@@ -8,6 +8,15 @@ function checkAdmin (){
 checkAdmin()
 
 
+//==================== B U R G E R    M E N U =======================//
+const menuBurger =  document.getElementById("menu-burger")
+
+const header = document.querySelector("header")
+menuBurger.addEventListener("click", ()=>{
+  header.classList.toggle("open")
+})
+
+
 
 
 ///==========================  DARK -- MODE ==========================//
