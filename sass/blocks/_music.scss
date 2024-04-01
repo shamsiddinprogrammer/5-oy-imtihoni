@@ -1,0 +1,91 @@
+.music {
+  padding-bottom: 80px;
+  &__start {
+    padding: 69px 56px;
+    color: #fff;
+    background-color: black;
+    background-image: url("../../images/Frame\ 694.png");
+    background-repeat: no-repeat;
+    background-position:right;
+  }
+  &__text{
+     color: rgba(0, 255, 102, 1);
+     line-height: 20px;
+     font-weight: 600;
+     margin-bottom: 30px;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 60px;
+    max-width: 450px;
+    margin-bottom: 20px;
+  }
+  &__card {
+    display: flex;
+    gap: 20px;
+    &-span {
+      padding: 12px 8px;
+      width: 62px;
+      background-color: #fff;
+      color: black;
+      text-align: center;
+      border-radius: 50%;
+      margin-bottom: 30px;
+      font-weight: 600;
+      b {
+        font-size: 11px;
+        margin: 0;
+        font-weight: 400;
+      }
+    }
+    &-span:hover {
+      background-color: rgba(0, 255, 102, 1);
+    }
+  }
+  &__btn {
+    padding: 16px 48px;
+    background-color: rgba(0, 255, 102, 1);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 255, 102, 1);
+    color: #fff;
+  }
+  &__btn:hover {
+    background-color: transparent;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .music {
+    padding-bottom: 50px;
+    &__start {
+      padding: 59px 36px;
+      background-position:center;
+      background-size: contain;
+    }
+    &__text{
+       margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 26px;
+      line-height: 30px;
+      margin-bottom: 20px;
+      max-width: 300px;
+    }
+    &__card {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      &-span {
+        padding: 8px 8px;
+        width: 50px;
+      }
+      &-span:hover {
+        background-color: rgba(0, 255, 102, 1);
+      }
+    }
+    &__btn {
+      padding: 14px 40px;
+
+    }
+
+  }
+}

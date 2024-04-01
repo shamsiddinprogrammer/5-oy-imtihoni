@@ -1,0 +1,145 @@
+.login {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  &__start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  &__img {
+    max-width: 805px;
+  }
+  &__form {
+    &-title {
+      font-size: 36px;
+      line-height: 30px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    &-text {
+      line-height: 24px;
+      margin-bottom: 40px;
+    }
+    &-inp {
+      border: none;
+      padding: 10px 5px;
+      width: 80%;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgb(193, 193, 193);
+    }
+    &-inp-password {
+      border: none;
+      padding: 10px 5px;
+      width: 80%;
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgb(193, 193, 193);
+    }
+    &-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;   
+    }
+    &-btn {
+      background-color: rgba(219, 68, 68, 1);
+      border-radius: 5px;
+      padding: 12px 30px;
+      border: 2px solid rgba(219, 68, 68, 1);
+      color: #fff;
+    }
+    &-btn:hover {
+      color: rgba(219, 68, 68, 1);
+      background-color: transparent;
+    }
+    &-link {
+      color: rgb(254, 0, 0);
+    }
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .login {
+    &__start {
+      gap: 20px;
+    }
+    &__img {
+      max-width: 605px;
+    }
+  }
+}
+@media only screen and (max-width: 980px) {
+  .login {
+    &__start {
+      gap: 20px;
+    }
+    &__img {
+      max-width: 405px;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .login {
+    padding-top: 140px;
+   padding-bottom: 60px;
+    &__start {
+      gap: 20px;
+      position: relative;
+    }
+    &__img {
+      width: 100%;
+      max-width: 800px;
+    }
+    &__form {
+      position: absolute;
+      padding: 40px;
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      &-inp {
+        width: 100%;
+        color: #fff;
+        background-color: transparent;
+      }
+      &-inp-password {
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+      }
+      &-card {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 384px){
+  .login {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    &__img {
+    display: none;
+    }
+    &__form {
+      z-index: 1;
+      position: unset;
+      &-title {
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      &-text {
+        line-height: 18px;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+      &-card {
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+        align-items: start;
+        gap: 10px;
+      }
+    }
+  }
+}

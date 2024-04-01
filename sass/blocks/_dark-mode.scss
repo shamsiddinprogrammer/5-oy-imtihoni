@@ -1,0 +1,123 @@
+.dark-mode:before {
+  content: "";
+  cursor: pointer;
+  transition: 0.4s;
+}
+.dark-mode.active{
+  left: 24px;
+  background-color: #fff;
+  color: #000000;
+}
+.dark-mode {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+body.dark {
+  background-color: black;
+  color: #fff;
+  .header {
+    &__menu {
+      span {
+        background-color: #fff;
+      }
+    }
+    &__start {
+      background-color: #7d7d7d;
+      color: #ffffff;
+      select {
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
+      }
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+  .header__end {
+    background-color: #000000;
+    a {
+      color: #fff;
+    }
+  }
+  
+  .hero{
+    background-color: #7d7b7b;
+    color: #000000;
+  }
+  .category__list {
+    &-item {
+      background-color: #7d7b7b;
+      color: #000000;
+    }
+    &-item:hover{
+      background-color: #00ff00;
+      color: #000000;
+    }
+  }
+  .music{
+    &__start {
+      background-color: #7d7b7b;
+      color: #000000;
+    }
+    &__card {
+      &-span {
+        background-color: #000000;
+        color: #fff;
+      }
+      &-span:hover {
+        background-color: #ff0000;
+      }
+    }
+    &__text {
+      color: #ff0000;
+    }
+    &__btn {
+      background-color: black;
+      border: none;
+    }
+    &__btn:hover {
+      background-color: rgb(255, 0, 0);
+    }
+  }
+  .service {
+    background-color: #7d7b7b;
+  }
+  .featured {
+    &__card {
+      &-first {
+        background-color: #7d7b7b;
+      }
+      &-third{
+        background-color: #ff0000;
+      }
+      &-fifth {
+        background-color: #7d7b7b;
+      }
+      &-sixth{
+        background-color: #7d7b7b;
+      }
+    }
+  }
+  .admin {
+    background-color: #4c4a4a;
+    form {
+      background-color: #000000;
+    }
+  }
+  .login {
+    background-color: #4c4a4a;
+  }
+  .product__main {
+    background-color: #4c4a4a;
+  }
+}

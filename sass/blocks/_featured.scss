@@ -1,0 +1,159 @@
+.featured {
+  padding-bottom: 80px;
+  &__wrapper {
+    display: flex;
+    // justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+  }
+  &__card {
+    &-first {
+      background-color: black;
+      color: #fff;
+      background-image: url("../../images/birinchi.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      padding-bottom: 0;
+      padding-top: 446px;
+      padding-left: 32px;
+      padding-bottom: 32px;
+      // width: 50vw;
+      width: 60%;
+    }
+    &-third {
+      background-color: black;
+      color: #fff;
+      background-image: url("../../images/ikkinchi.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      padding-bottom: 0;
+      padding-top: 138px;
+      padding-left: 32px;
+      padding-bottom: 32px;
+      // width: 40vw;
+      // width: 100%;
+      margin-bottom: 30px;
+    }
+    &-fourth {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    &-fifth{
+      background-color: black;
+      color: #fff;
+      background-image: url("../../images/uchinchi.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-bottom: 0;
+      padding-top: 175px;
+      padding-left: 32px;
+      padding-bottom: 32px;
+      width: 100%;
+    }
+    &-sixth {
+      background-color: black;
+      color: #fff;
+      background-image: url("../../images/tortinchi.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      padding-bottom: 0;
+      padding-top: 175px;
+      padding-left: 32px;
+      padding-bottom: 32px;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    max-width: 242px;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+  &__link {
+    line-height: 24px;
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .featured {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__card {
+      &-first {
+        width: 100%;
+      }
+      &-third {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 615px) {
+  .featured {
+    &__card {
+      &-first {
+        padding-bottom: 0;
+        padding-top: 446px;
+        padding-left: 12px;
+        padding-bottom: 32px;
+        // width: 50v w;
+        width: 100%;
+      }
+      &-fourth {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .featured {
+    padding-bottom: 40px;
+    &__card {
+      &-first {
+        padding-top: 246px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+      &-third {
+        padding-left: 20px;
+        padding-bottom: 20px
+      }
+      &-fifth{
+        padding-left: 20px;
+        padding-bottom: 20px
+      }
+      &-sixth {
+        padding-left: 20px;
+        padding-bottom: 20px
+      }
+    }
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 18px;
+      margin-bottom: 7px;
+    }
+    &__link {
+      line-height: 19px;
+
+    }
+  }
+}

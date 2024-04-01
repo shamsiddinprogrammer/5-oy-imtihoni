@@ -1,0 +1,139 @@
+.admin {
+  padding-top: 190px;
+  padding-bottom: 130px;
+  &__card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    &-span {
+      color: rgb(255, 0, 0);
+    }
+  }
+  &__link {
+    color: rgb(203, 198, 198);
+  }
+  &__link:hover {
+    color: rgb(255, 0, 0);
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    &-card {
+      
+      a {
+        padding-left: 30px;
+        margin-top: 25px;
+      }
+    }
+    &-title {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__form {
+    padding: 40px 80px;
+    // border: 1px solid   rgb(255, 255, 255) ;
+    box-shadow: 0 4px 8px 0 rgba(155, 154, 154, 0.2), 0 6px 20px 0 rgba(181, 180, 180, 0.19);
+    &-title {
+      color: rgba(219, 68, 68, 1);
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+    &-card {
+      display: flex;
+      margin-bottom: 15px;
+      gap: 20px;
+      // justify-content: space-between;
+    }
+    &-text {
+      margin-bottom: 7px;
+    }
+    &-inp {
+      width: 350px;
+      padding: 10px 24px;
+      background-color: rgba(245, 245, 245, 1);
+      border: none;
+    }
+    &-inp1 {
+      padding: 10px 24px;
+      margin-bottom: 15px;
+      width: 100%;
+      background-color: rgba(245, 245, 245, 1);
+      border: none;
+    }
+  }
+}
+@media  only screen and (max-width: 1120px)  {
+  .admin {
+    &__wrapper {
+      flex-direction: column;
+      // text-align: center;
+      &-card {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+    }
+    &__form{
+      width: 100%;
+      &-card {
+        flex-direction: column;
+      }
+      &-inp {
+        width: 100%;
+        
+      }
+    }
+  }
+}
+@media  only screen and (max-width: 500px)  {
+  .admin {   
+    &__wrapper {
+      &-card {
+        flex-direction: column;
+        text-align: start;
+        a {
+          display: none;
+        }
+        br {
+          display: none;
+        }
+        &-title {
+          margin-bottom: 10px;
+        }
+
+      }
+    }
+    padding-top: 60px;
+    padding-bottom: 100px;
+    &__card{
+      margin-bottom: 60px;
+    }
+    &__form{
+      padding: 15px 30px;
+    }
+  }
+}
+@media  only screen and (max-width: 350px)  {
+  .admin {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    &__card{
+      margin-bottom: 30px;
+      flex-direction: column;
+      gap: 10px;
+    }
+    &__form{
+      &-text {
+        font-size: 12px;
+      }
+      &-inp {
+        padding: 8px 10px;
+      }
+    }
+  }
+}

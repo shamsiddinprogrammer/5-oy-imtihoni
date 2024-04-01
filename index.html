@@ -4,159 +4,450 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2_10-uyga_vazifa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
+  <title>5-oy_imtihon</title>
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-  <div class="c">
-    <section class="section">
-      <form class="contact" accept="https://echo.htmlacademy.ru/">
-        <p class="contact_text">
-          STAY IN CAONTACT
-        </p>
-        <h1 class="contact_title">
-          Get in Touch
-        </h1>
-        <div class="contact_name">
-          <input class="contact_inp" type="text" placeholder="Name">
-          <input class="contact_inp" type="tel" placeholder="Phone No.">
-        </div>
-        <input class="contact_inp" type="email" placeholder="Email I’d">
-        <input class="contact_inp" type="textarea" placeholder="Project Brief...">
-        <div class="contact_Subscribe">
-          <input type="checkbox">
-          <p class="contact_Subscribe_text">
-            Subscribe Newsletter
+  <header class="header">
+    <div class="header__start">
+      <div class="container">
+        <div class="header__start-card">
+          <p class="header__start-text">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+            <a href="#">
+              ShopNow
+            </a>
           </p>
+          <select class="header__start-seleck" name="country">
+            <option value="Question type">English</option>
+            <option value="nimadir">UZB</option>
+            <option value="nimadir">RUS</option>
+          </select>
         </div>
-        <button class="contact_btn">
-          Send Message
-        </button>
-      </form>
-      <div class="xarita">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.072884043798!2d69.20123767563696!3d41.28551820230842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sen!2s!4v1697368151722!5m2!1sen!2s"
-          width="700" height="750" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      </div>
+    </div>
+    <div class="header__end">
+      <div class="container">
+        <div class="header__end-wrapper">
+          <a class="header__link" href="index.html">
+            Exclusive
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">
+                  Contact
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link" href="#">
+                  About
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a class="header__list-link admin_link" href="./pages/login.html">
+                  Sign in
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__card">
+            <form class="header__form" action="">
+              <input class="header__form-inp" type="search" placeholder="What are you looking for?" required>
+              <img class="header__form-search" src="./icons/search.svg" alt="">
+            </form>
+            <img src="./icons/Wishlist.svg" alt="">
+            <img src="./icons/carzinka.svg" alt="" width="30">
+
+            <p class="dark-mode" id="dark-change">
+              Dark
+            </p>
+
+            <button class="header__menu" id="menu-burger">
+              <span class="header__menu-span"></span>
+              <span class="header__menu-span"></span>
+              <span class="header__menu-span"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__start">
+          <div class="hero__card">
+            <img src="./icons/apple.svg" alt="" width="40">
+            <p class="hero__card-text">
+              iPhone 14 Series
+            </p>
+          </div>
+          <h1 class="hero__title">
+            Up to 10% off Voucher
+          </h1>
+          <a class="hero__link" href="#">
+            <p class="hero__link-text">
+              Shop Now
+            </p>
+            <img src="./icons/arrow-right.svg" alt="">
+          </a>
+        </div>
       </div>
     </section>
-  
-    <section class="section">
-      <div class="Give">
-        <ul class="give_list">
-          <li class="give_item">
-            <img class="give_item_img" src="./img/phone.svg" alt="">
-            <div class="gime_item_text">
-              <h2 class="give_etim_text_title">
-                Give Us a Call
-              </h2>
-              <p class="give_text">
-                +91 098 098 8393
+    <section class="category">
+      <div class="container">
+        <div class="category__start">
+          <p class="category__text">
+            Categories
+          </p>
+          <h2 class="category__title">
+            Browse By Category
+          </h2>
+          <ul class="category__list">
+            <li class="category__list-item">
+              <img src="./icons/Category-CellPhone.svg" alt="">
+              <p>
+                Phones
               </p>
+            </li>
+            <li class="category__list-item">
+              <img src="./icons/Category-Computer.svg" alt="">
+              <p>
+                Computers
+              </p>
+            </li>
+            <li class="category__list-item">
+              <img src="./icons/Category-SmartWatch.svg" alt="">
+              <p>
+                SmartWatch
+              </p>
+            </li>
+            <li class="category__list-item">
+              <img src="./icons/Category-Camera.svg" alt="">
+              <p>
+                Camera
+              </p>
+            </li>
+            <li class="category__list-item">
+              <img src="./icons/HeadPhones.svg" alt="">
+              <p>
+                HeadPhones
+              </p>
+            </li>
+            <li class="category__list-item">
+              <img src="./icons/Gaming.svg" alt="">
+              <p>
+                Gaming
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <div class="products__start">
+          <p class="category__text">
+            Our Products
+          </p>
+          <div class="products__group">
+            <h2 class="category__group-title">
+              Explore Our Products
+            </h2>
+            <div class="products__group-img">
+              <img src="./icons/left.svg" alt="">
+              <img src="./icons/right.svg" alt="">
             </div>
+          </div>
+          <!-- ------------------- LOADING START------------------------- -->
+          <div class="loading">
+            <div class="loading__group">
+            </div>
+          </div>
+          <!-- ------------------- LOADING END------------------------- -->
+
+          <!-- -------------------API START------------------------- -->
+          <div class="products__wrapper">
+
+          </div>
+          <!-- ------------------- API END------------------------- -->
+        </div>
+      </div>
+    </section>
+    <section class="music">
+      <div class="container">
+        <div class="music__start">
+          <p class="music__text">
+            Categories
+          </p>
+          <h2 class="music__title">
+            Enhance Your Music Experience
+          </h2>
+          <div class="music__card">
+            <span class="music__card-span">
+              23 <b>Hours</b>
+            </span>
+            <span class="music__card-span">
+              05 <b>Days</b>
+            </span>
+            <span class="music__card-span">
+              59 <b>Minutes</b>
+            </span>
+            <span class="music__card-span">
+              35 <b>Seconds</b>
+            </span>
+          </div>
+          <button class="music__btn">
+            Buy Now!
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="featured">
+      <div class="container">
+        <div class="featured__start">
+          <p class="category__text">
+            Featured
+          </p>
+          <h2 class="category__title">
+            New Arrival
+          </h2>
+          <div class="featured__wrapper">
+            <div class="featured__card-first">
+              <h3 class="featured__title">
+                PlayStation 5
+              </h3>
+              <p class="featured__text">
+                Black and White version of the PS5 coming out on sale.
+              </p>
+              <a class="featured__link" href="#">
+                Shop Now
+              </a>
+            </div>
+            <div class="featured__card-second">
+              <div class="featured__card-third">
+                <h3 class="featured__title">
+                  Women’s Collections
+                </h3>
+                <p class="featured__text">
+                  Featured woman collections that give you another vibe.
+                </p>
+                <a class="featured__link" href="#">
+                  Shop Now
+                </a>
+              </div>
+              <div class="featured__card-fourth">
+                <div class="featured__card-fifth">
+                  <h3 class="featured__title">
+                    Speakers
+                  </h3>
+                  <p class="featured__text">
+                    Amazon wireless speakers
+                  </p>
+                  <a class="featured__link" href="#">
+                    Shop Now
+                  </a>
+                </div>
+                <div class="featured__card-sixth">
+                  <h3 class="featured__title">
+                    Perfume
+                  </h3>
+                  <p class="featured__text">
+                    GUCCI INTENSE OUD EDP
+                  </p>
+                  <a class="featured__link" href="#">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container">
+        <ul class="service__list">
+          <li class="service__list-item">
+            <span class="service__list-span1">
+              <span class="service__list-span2">
+                <img src="./icons/icon-delivery.svg" alt="">
+              </span>
+            </span>
+            <h3 class="service__list-title">
+              FREE AND FAST DELIVERY
+            </h3>
+            <p class="service__list-text">
+              Free delivery for all orders over $140
+            </p>
           </li>
-          <li class="give_item">
-            <img class="give_item_img" src="./img/envelope.svg" alt="">
-            <div class="gime_item_text">
-              <h2 class="give_etim_text_title">
-                Send Us an Email
-              </h2>
-              <p class="give_text">
-                ecample@gmail.com
-              </p>
-            </div>
+          <li class="service__list-item">
+            <span class="service__list-span1">
+              <span class="service__list-span2">
+                <img src="./icons/icon-delivery.svg" alt="">
+              </span>
+            </span>
+            <h3 class="service__list-title">
+              FREE AND FAST DELIVERY
+            </h3>
+            <p class="service__list-text">
+              Free delivery for all orders over $140
+            </p>
           </li>
-          <li class="give_item">
-            <img class="give_item_img" src="./img/pin.svg" alt="">
-            <div class="gime_item_text">
-              <h2 class="give_etim_text_title">
-                Drop BY and Talk
-              </h2>
-              <p class="give_text">
-                Unit 8012- 8014, Chandaka Industrial Estate, K I, I T University, Patia, Bhubaneswar, Odisha 751024
-              </p>
-            </div>
+          <li class="service__list-item">
+            <span class="service__list-span1">
+              <span class="service__list-span2">
+                <img src="./icons/icon-delivery.svg" alt="">
+              </span>
+            </span>
+            <h3 class="service__list-title">
+              FREE AND FAST DELIVERY
+            </h3>
+            <p class="service__list-text">
+              Free delivery for all orders over $140
+            </p>
           </li>
         </ul>
-        <img class="give_img1" src="./img/twitter.svg" alt="">
-        <img class="give_img" src="./img/linkidin.svg" alt="">
-        <img class="give_img" src="./img/instagram.svg" alt="">
-        <img class="give_img" src="./img/fуcebook.svg" alt="">
-  
-      </div>
-  
-      <div class="get">
-        <form class="get_form" accept="https://echo.htmlacademy.ru/">
-          <p class="contact_text">
-            STAY IN CAONTACT
-          </p>
-          <h1 class="contact_title">
-            Get in Touch
-          </h1>
-          <input class="Get_inp" type="text" placeholder="NAME">
-          <input class="Get_inp" type="tel" placeholder="MOBILE">
-          <input class="Get_inp" type="email" placeholder="EMAIL">
-          <input class="Get_inp" type="textarea" placeholder="MESSAGE">
-          <button class="Get_btn">
-            Send Message
-          </button>
-        </form>
       </div>
     </section>
-  
-    <section class="section">
-      <div class="Timing">
-        <div class="timing_list">
-          <h1 class="timing_title">
-            Our Timing
-          </h1>
-          <h3 class="timing_title_2">
-            MONDAY - TUESDAY
-          </h3>
-          <p class="timing_text1">
-            07:20 - 12:30
-          </p>
-          <p class="timing_text">
-            04:20 - 09:30
-          </p>
-          <h3 class="timing_title_2">
-            fRIDAY - SUNDAY
-          </h3>
-          <p class="timing_text1">
-            07:20 - 12:30
-          </p>
-          <p class="timing_text">
-            04:20 - 09:30
-          </p>
-          <p class="timing_text3">
-            Call : +91 025 963 5685
-          </p>
-  
+  </main>
+  <footer class="footer">
+    <div class="footer__start">
+      <div class="container">
+        <div class="footer__card">
+          <div class="footer__card-group">
+            <a class="footer__links" href="index.html">
+              Exclusive
+            </a><br><br>
+            <a class="footer__link" href="#">
+              Subscribe
+            </a>
+            <p class="footer__text">
+              Get 10% off your first order
+            </p>
+            <input class="footer__inp" type="email" placeholder="Enter your email">
+          </div>
+          <div class="footer__card-group">
+            <a class="footer__links" href="#">
+              Support
+            </a>
+            <p class="footer__text">
+              111 Bijoy sarani, Dhaka, <br> DH 1515, Bangladesh.
+            </p>
+            <p class="footer__text">
+              exclusive@gmail.com
+            </p>
+            <p class="footer__text">
+              +88015-88888-9999
+            </p>
+          </div>
+          <div class="footer__card-group">
+            <a class="footer__links" href="#">
+              Account
+            </a>
+            <ul class="footer__list">
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  My Account
+                </a>
+              </li>
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  Login / Register
+                </a>
+              </li>
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  Cart
+                </a>
+              </li>
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  Wishlist
+                </a>
+              </li>
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  Shop
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__card-group">
+            <a class="footer__links" href="#">
+              Quick Link
+            </a>
+            <ul class="footer__list">
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  Terms Of Use
+                </a>
+              </li>
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li class="footer__list-link">
+                <a class="footer__list-link" href="#">
+                  Contact
+                </a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="footer__card-group">
+            <a class="footer__links" href="#">
+              Download App
+            </a>
+            <p class="footer__text">
+              Save $3 with App New User Only
+            </p>
+            <div class="footer__img">
+              <img src="./icons/QrCode.svg" alt="">
+              <div>
+                <a href="https://play.google.com/store/apps?hl=ru&gl=US&pli=1" target="_blank">
+                  <img src="./icons/play-app.svg" alt="">
+                </a><br>
+                <a href="https://www.apple.com/app-store/" target="_blank">
+                  <img src="./icons/download-appstore.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="footer__fecobook">
+              <a href="https://twitter.com/?lang=ru" target="_blank">
+                <img src="./icons/Icon-Twitter.svg" alt="">
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="./icons/Icon-Facebook.svg" alt="">
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="./icons/instagram.svg" alt="">
+              </a>
+              <a href="https://www.linkedin.com/" target="_blank">
+                <img src="./icons/in.svg" alt="">
+              </a>
+            </div>
+          </div>
         </div>
-  
       </div>
-      <form class="get_form" accept="https://echo.htmlacademy.ru/">
-        <p class="contact_text">
-          STAY IN CAONTACT
-        </p>
-        <h1 class="contact_title">
-          Get in Touch
-        </h1>
-        <input class="Timing_inp" type="text" placeholder="NAME">
-        <input class="Timing_inp" type="tel" placeholder="MOBILE">
-        <input class="Timing_inp" type="email" placeholder="EMAIL">
-        <input class="Timing_inp" type="textarea" placeholder="MESSAGE">
-        <button class="Timing_btn">
-          Send Message
-        </button>
-    </section>
-  </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
 </body>
 
-.3
 </html>
